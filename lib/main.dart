@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'Reto2.dart';
 
 void main() => runApp(MyApp());
 
@@ -20,7 +21,7 @@ class MyApp extends StatelessWidget {
         // is not restarted.
         primarySwatch: Colors.blue,
       ),
-      home: BackHomePage //MyHomePage(title: 'Flutter Demo Home Page'),
+      home: BackHomePage() //MyHomePage(title: 'Flutter Demo Home Page'),
     );
   }
 }
