@@ -1,5 +1,9 @@
 import 'package:flutter/material.dart';
-import 'Reto2.dart';
+import 'description_place.dart';
+
+
+
+
 
 void main() => runApp(MyApp());
 
@@ -21,7 +25,12 @@ class MyApp extends StatelessWidget {
         // is not restarted.
         primarySwatch: Colors.blue,
       ),
-      home: BackHomePage() //MyHomePage(title: 'Flutter Demo Home Page'),
+      home: Scaffold(
+        appBar: AppBar(
+          title: Text("Popular"),
+        ),
+        body: new DescriptionPlace(),
+      ) //MyHomePage(title: 'Flutter Demo Home Page'),
     );
   }
 }
