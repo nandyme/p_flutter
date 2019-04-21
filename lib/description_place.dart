@@ -5,7 +5,8 @@ class DescriptionPlace extends StatelessWidget {
   Widget build(BuildContext context) {
     // TODO: implement build
 
-    final the_body = Column(
+
+    final format = Column(
       //Slider
         //Stack
           //Row of images
@@ -29,9 +30,11 @@ class DescriptionPlace extends StatelessWidget {
       //Singular Review
     );
 
+
+
     final star = Container(
       margin: EdgeInsets.only(
-        top: 323.0,
+        top: 233.0,
         right: 3.0
       ),
       child: Icon(
@@ -42,7 +45,7 @@ class DescriptionPlace extends StatelessWidget {
 
     final empty_star = Container(
       margin: EdgeInsets.only(
-        top: 323.0,
+        top: 233.0,
         right: 3.0
       ),
       child: Icon(
@@ -55,7 +58,7 @@ class DescriptionPlace extends StatelessWidget {
       children: <Widget>[
         Container(
           margin: EdgeInsets.only(
-            top: 320.0,
+            top: 230.0,
             left: 20.0,
             right: 20.0
           ),
@@ -81,7 +84,34 @@ class DescriptionPlace extends StatelessWidget {
 
       ],
     );
-    return title_stars;
+
+
+    final description = Container(
+      margin: EdgeInsets.only(
+          top: 10.0,
+          right: 20.0,
+          left: 20.0
+      ),
+      child: Text(
+        "Hola vengo a hablar porque hablar es algo lindo que deberia de hacer toda la gente en este planeta porque hablar es re lindo te permite comunicarte con la gente para poder hacer cosas comunicarse es lindo jejejejeje",
+        style: TextStyle(
+            fontSize: 15,
+            fontWeight: FontWeight.w300
+        ),
+        textAlign: TextAlign.center,
+      ),
+    );
+
+
+    final the_body = Column(
+      children: <Widget>[
+        title_stars,
+        description
+      ],
+    );
+
+
+    return the_body;
 
   }
 
