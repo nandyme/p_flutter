@@ -18,7 +18,7 @@ class TheBody extends StatelessWidget {
             ReviewList()
           ],
         ),
-        GradientBack()
+        GradientBack("Popular")
       ],
     );
   }
