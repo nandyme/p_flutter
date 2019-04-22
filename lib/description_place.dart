@@ -34,7 +34,7 @@ class DescriptionPlace extends StatelessWidget {
 
     final star = Container(
       margin: EdgeInsets.only(
-        top: 233.0,
+        top: 228.0,
         right: 3.0
       ),
       child: Icon(
@@ -43,9 +43,9 @@ class DescriptionPlace extends StatelessWidget {
       ),
     );
 
-    final empty_star = Container(
+    final emptyStar = Container(
       margin: EdgeInsets.only(
-        top: 233.0,
+        top: 228.0,
         right: 3.0
       ),
       child: Icon(
@@ -54,17 +54,18 @@ class DescriptionPlace extends StatelessWidget {
       ),
     );
 
-    final title_stars = Row (
+    final titleStars = Row (
       children: <Widget>[
         Container(
           margin: EdgeInsets.only(
-            top: 230.0,
+            top: 225.0,
             left: 20.0,
             right: 20.0
           ),
           child: Text(
             "Duwili Ella",
             style: TextStyle(
+              fontFamily: "Lato",
               fontSize: 30.0,
               fontWeight: FontWeight.w900
             ),
@@ -78,7 +79,7 @@ class DescriptionPlace extends StatelessWidget {
             star,
             star,
             star,
-            empty_star
+            emptyStar
           ],
         )
 
@@ -93,25 +94,28 @@ class DescriptionPlace extends StatelessWidget {
           left: 20.0
       ),
       child: Text(
-        "Hola vengo a hablar porque hablar es algo lindo que deberia de hacer toda la gente en este planeta porque hablar es re lindo te permite comunicarte con la gente para poder hacer cosas comunicarse es lindo jejejejeje",
+        '''Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text even since the 1500s. When an unknown printer took a gallery of type and scrambled it to make a type specimen book
+        
+        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text even since the 1500s. When an unknown printer took a gallery of type and scrambled it to make a type specimen book''',
         style: TextStyle(
-            fontSize: 15,
+            fontFamily: "Lato",
+            fontSize: 10.0,
             fontWeight: FontWeight.w300
         ),
-        textAlign: TextAlign.center,
+        textAlign: TextAlign.left,
       ),
     );
 
 
-    final the_body = Column(
+    final head = Column(
       children: <Widget>[
-        title_stars,
+        titleStars,
         description
       ],
     );
 
 
-    return the_body;
+    return head;
 
   }
 
