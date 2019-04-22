@@ -26,11 +26,7 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
       ),
       home: Scaffold(
-        appBar: AppBar(
-          title: Text("Popular"),
-          centerTitle: true,
-        ),
-        body: new TheBody(),
+        body: TheBody(),
       ) //MyHomePage(title: 'Flutter Demo Home Page'),
     );
   }

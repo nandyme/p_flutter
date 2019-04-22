@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'description_place.dart';
 import 'review_list.dart';
+import 'gradient_back.dart';
 
 
 
@@ -9,10 +10,15 @@ class TheBody extends StatelessWidget {
   Widget build(BuildContext context) {
     // TODO: implement build
 
-    return Column(
+    return Stack(
       children: <Widget>[
-        new DescriptionPlace(),
-        new ReviewList()
+        ListView(
+          children: <Widget>[
+            DescriptionPlace(),
+            ReviewList()
+          ],
+        ),
+        GradientBack()
       ],
     );
   }

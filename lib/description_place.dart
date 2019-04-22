@@ -49,8 +49,8 @@ class DescriptionPlace extends StatelessWidget {
         right: 3.0
       ),
       child: Icon(
-        Icons.star_border,
-        color: Colors.black12,
+        Icons.star_half,
+        color: Colors.amber,
       ),
     );
 
@@ -99,7 +99,7 @@ class DescriptionPlace extends StatelessWidget {
         Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text even since the 1500s. When an unknown printer took a gallery of type and scrambled it to make a type specimen book''',
         style: TextStyle(
             fontFamily: "Lato",
-            fontSize: 10.0,
+            fontSize: 12.0,
             fontWeight: FontWeight.w300
         ),
         textAlign: TextAlign.left,
