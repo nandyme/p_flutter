@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'the_body.dart';
+import 'the_header_appbar.dart';
 
 
 
@@ -28,7 +29,13 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
       ),
       home: Scaffold(
-        body: TheBody(),
+
+        body: Stack(
+          children: <Widget>[
+            TheBody(),
+            HeaderAppBar()
+          ],
+        )
       ) //MyHomePage(title: 'Flutter Demo Home Page'),
     );
   }

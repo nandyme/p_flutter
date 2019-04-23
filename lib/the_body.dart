@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
 import 'description_place.dart';
 import 'review_list.dart';
-import 'gradient_back.dart';
-
 
 
 class TheBody extends StatelessWidget {
@@ -18,7 +16,6 @@ class TheBody extends StatelessWidget {
             ReviewList()
           ],
         ),
-        GradientBack("Popular")
       ],
     );
   }
