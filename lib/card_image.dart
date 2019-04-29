@@ -40,7 +40,7 @@ class CardImage extends StatelessWidget {
 
 
     return Stack(
-      alignment: Alignment(0.9, 1.1),
+      alignment: Alignment(0.9, 1.3),
       children: <Widget>[
         card,
         FloatingActionButtonGreen()
