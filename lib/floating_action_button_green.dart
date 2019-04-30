@@ -6,32 +6,35 @@ class FloatingActionButtonGreen extends StatefulWidget {
     // TODO: implement createState
     return _FloatingActionButtonGreen();
   }
-
 }
 
-
-
 class _FloatingActionButtonGreen extends State<FloatingActionButtonGreen> {
-
-
   var _heart = Icons.favorite_border;
-
 
   void _onPressedFav() {
     if (_heart == Icons.favorite_border) {
       setState(() {
         _heart = Icons.favorite;
+        Scaffold.of(context)
+            .showSnackBar(
+            SnackBar(
+                content: Text("Agregado a favoritos."),
+                duration: const Duration(milliseconds: 300),
+            )
+        );
       });
-    } else {
+    } else if (_heart == Icons.favorite) {
       setState(() {
         _heart = Icons.favorite_border;
       });
+      Scaffold.of(context)
+          .showSnackBar(
+          SnackBar(
+              content: Text("Quitado de favoritos."),
+              duration: const Duration(milliseconds: 300),
+          ));
     }
-    Scaffold.of(context).showSnackBar(SnackBar(content: Text("Agregado a favoritos.")));
   }
-
-
-
 
   @override
   Widget build(BuildContext context) {
@@ -47,5 +50,4 @@ class _FloatingActionButtonGreen extends State<FloatingActionButtonGreen> {
       ),
     );
   }
-
 }
