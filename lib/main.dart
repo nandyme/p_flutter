@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'the_body.dart';
-import 'the_header_appbar.dart';
+import 'platzi_trips.dart';
 
 
 
@@ -28,15 +27,7 @@ class MyApp extends StatelessWidget {
         // is not restarted.
         primarySwatch: Colors.blue,
       ),
-      home: Scaffold(
-
-        body: Stack(
-          children: <Widget>[
-            TheBody(),
-            HeaderAppBar()
-          ],
-        )
-      ) //MyHomePage(title: 'Flutter Demo Home Page'),
+      home: PlatziTrips()  //MyHomePage(title: 'Flutter Demo Home Page'),
     );
   }
 }
